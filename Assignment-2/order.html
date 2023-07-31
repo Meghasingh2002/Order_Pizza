@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering page</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="./ordercss/style.css">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo">Tasty Twist</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <form class="form-delivery">
+        <!-- Pizza details section -->
+        <div class="pizza-form">
+            <!-- Base options -->
+            <div>
+                <h2>Make your own pizza</h2>
+                <p>Base :-</p>
+                <label for="hand-tossed">Hand Tossed</label>
+                <input type="radio" id="hand-tossed" name="base" value="Hand Tossed">
+                <label for="thin-crust">Crunchy Thin Crust</label>
+                <input type="radio" id="thin-crust" name="base" value="Crunchy Thin Crust">
+                <label for="gluten-free">Gluten-Free Crust</label>
+                <input type="radio" id="gluten-free" name="base" value="Gluten-Free Crust">
+                <label for="hand-thin">Hand Tossed Thin</label>
+                <input type="radio" id="hand-thin" name="base" value="Hand Tossed Thin">
+            </div>
+            <!-- Toppings options -->
+            <div class="toppings">
+                <p>Toppings :-</p>
+                <label for="jalapeno">Jalapeno</label>
+                <input type="checkbox" id="jalapeno">
+                <label for="pepperoni">Pepperoni</label>
+                <input type="checkbox" id="pepperoni">
+                <label for="extracheese">Extra Cheese</label>
+                <input type="checkbox" id="extracheese">
+                <label for="Grilled Chicken">Grilled Chicken</label>
+                <input type="checkbox" id="Grilled Chicken">
+                <label for="bellpepper">Bell Pepper</label>
+                <input type="checkbox" id="bellpepper">
+                <label for="onions">Onions</label>
+                <input type="checkbox" id="onions">
+                <label for="Ricota Cheese">Ricota Cheese</label>
+                <input type="checkbox" id="Ricota Cheese">
+                <label for="Ground Beef">Ground Beef</label>
+                <input type="checkbox" id="Ground Beef">
+                <label for="Olives">Olives</label>
+                <input type="checkbox" id="Olives">
+                <label for="Sausage">Sausage</label>
+                <input type="checkbox" id="Sausage">
+            </div>
+            <!-- Drinks options -->
+            <div class="drinks">
+                <p>Drinks :-</p>
+                <label for="coke">Coca-Cola</label>
+                <input type="checkbox" id="coke">
+                <label for="Sprite">Sprite</label>
+                <input type="checkbox" id="Sprite">
+                <label for="Fanta">Fanta</label>
+                <input type="checkbox" id="Fanta">
+                <label for="OrangeJuice">Orange Juice</label>
+                <input type="checkbox" id="OrangeJuice">
+                <label for="IceTea">Ice Tea</label>
+                <input type="checkbox" id="IceTea">
+                <label for="RootBeer">Root Beer</label>
+                <input type="checkbox" id="RootBeer">
+                <label for="Lemonade">Lemonade</label>
+                <input type="checkbox" id="Lemonade">
+                <label for="Mojito">Mojito</label>
+                <input type="checkbox" id="Mojito">
+            </div>
+        </div>
+        <!-- Customer information section -->
+        <div class="name-input">
+            <div>
+                <label for="fname">Firse Name:</label>
+                <input type="text" name="fname" id="fname" placeholder="FirstName" required>
+            </div>
+            <div>
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" placeholder="LastName" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="1234@gmail.com" required>
+            </div>
+            <div>
+                <label for="tel">Telephone:</label>
+                <input type="tel" name="tel" id="tel" placeholder="(123)-456-7890" required>
+            </div>
+        </div>
+        <!-- Location selection -->
+        <div class="location">
+            <label for="location">Enter Location: </label>
+            <select name="location" id="location">
+                <option value="Barrie">455 Wellington plaza, Barrie</option>
+                <option value="Orillia">134 Thomas Rd, Orillia East</option>
+                <option value="Midland">987 Mavis RD, Midland</option>
+            </select>
+        </div>
+        <!-- Payment selection -->
+        <div class="payment">
+            <label for="payement">Enter Payment Type: </label>
+            <select name="payment" id="payment">
+                <option value="Debit">Debit</option>
+                <option value="Credit">Credit</option>
+                <option value="PayPal">PayPal</option>
+            </select>
+        </div>
+        <!-- Form submission buttons -->
+        <div class="buttons">
+            <input name="form" type="submit" value="Order">
+            <input type="reset" name="reset" id="reset">
+        </div>
+    </form>
+</body>
